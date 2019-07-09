@@ -1,0 +1,81 @@
+object frmPrincipal: TfrmPrincipal
+  Left = 0
+  Top = 0
+  Caption = 'Embaralhador do Haroldo - Criatus Design'#174
+  ClientHeight = 480
+  ClientWidth = 740
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 1
+  object lblTexto: TLabel
+    Position.X = 8.000000000000000000
+    Position.Y = 8.000000000000000000
+    Size.Width = 120.000000000000000000
+    Size.Height = 16.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Texto'
+    TabOrder = 1
+  end
+  object memTexto: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    Position.X = 8.000000000000000000
+    Position.Y = 24.000000000000000000
+    Size.Width = 385.000000000000000000
+    Size.Height = 137.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    Viewport.Width = 377.000000000000000000
+    Viewport.Height = 129.000000000000000000
+  end
+  object memChave: TLabel
+    Position.X = 432.000000000000000000
+    Position.Y = 8.000000000000000000
+    Size.Width = 120.000000000000000000
+    Size.Height = 16.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Chave'
+    TabOrder = 0
+  end
+  object edtChave: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 4
+    Text = '5'
+    Position.X = 432.000000000000000000
+    Position.Y = 24.000000000000000000
+  end
+  object cbEmbaralhar: TCheckBox
+    IsChecked = True
+    Position.X = 432.000000000000000000
+    Position.Y = 56.000000000000000000
+    Size.Width = 281.000000000000000000
+    Size.Height = 19.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'checkboxstyle'
+    TabOrder = 5
+    Text = 'Embaralhar a posi'#231#227'o das palavras na frase'
+  end
+  object btnAdicionar: TButton
+    Position.X = 496.000000000000000000
+    Position.Y = 104.000000000000000000
+    Size.Width = 121.000000000000000000
+    Size.Height = 49.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 6
+    Text = 'Adicionar'
+    OnClick = btnAdicionarClick
+  end
+  object memResultado: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    Position.X = 8.000000000000000000
+    Position.Y = 232.000000000000000000
+    Size.Width = 724.000000000000000000
+    Size.Height = 241.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    Viewport.Width = 716.000000000000000000
+    Viewport.Height = 233.000000000000000000
+  end
+end
